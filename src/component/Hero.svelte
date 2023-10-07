@@ -53,7 +53,7 @@
 		border-radius: 140px;
 	}
 	.hero-button {
-		margin-top: 46px;
+		margin-top: 40px;
 	}
 	.hero-button a button {
 		display: flex;
