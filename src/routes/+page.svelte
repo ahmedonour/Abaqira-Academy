@@ -1,8 +1,11 @@
 <script>
+	import Hero from "../component/Hero.svelte";
+
 
 
 </script>
 <main>
+    <Hero />
 </main>
 <style>
     /* main{
