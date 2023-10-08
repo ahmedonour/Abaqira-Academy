@@ -1,19 +1,21 @@
 <script>
-	import { fly } from 'svelte/transition';
 </script>
 
 <section class="Hero">
 	<div class="hero-text">
 		<h1>Abaqira Academy</h1>
 		<p>Home Of Genius</p>
+		<p class="hero-desktop">
+			At Abaqira Academy, we ignite young minds and shape tomorrow's leaders. Nestled in the vibrant
+			heart of Addis Ababa, our school is a beacon of quality education, dedicated to nurturing
+			young talents while celebrating the rich cultural diversity of Ethiopia.
+		</p>
 	</div>
 	<div class="hero-img">
+		<img src="star.png" alt="" srcset="" id="star" />
 		<!-- svelte-ignore a11y-img-redundant-alt -->
-		<img
-			in:fly={{ delay: 250, duration: 800, x: 100 }}
-			src="Hero-image.png"
-			alt="Image Of Studant"
-		/>
+		<img src="Hero-image.png" alt="Image Of Studant" srcset="" />
+		<img src="cube.png" alt="" srcset="" id="cube" />
 	</div>
 	<div class="hero-button">
 		<a href="/about"><button>Read More</button></a>
@@ -22,7 +24,7 @@
 
 <style>
 	.Hero {
-		width: 313px;
+		width: var(--Sec-width);
 		margin-top: 26px;
 		display: flex;
 		justify-content: center;
@@ -46,8 +48,15 @@
 		font-weight: 400;
 		font-size: 30px;
 	}
+	.hero-text .hero-desktop {
+		display: none;
+	}
 	.hero-img {
 		margin-top: 35px;
+	}
+	.hero-img #star,
+	#cube {
+		display: none;
 	}
 	.hero-img img {
 		border-radius: 140px;
@@ -57,7 +66,7 @@
 	}
 	.hero-button a button {
 		display: flex;
-		width: 158.643px;
+		width: 44.0675vw;
 		height: 50px;
 		padding: 12.346px 27.864px 12.654px 27.778px;
 		justify-content: center;
@@ -69,10 +78,99 @@
 		border-radius: 12.346px;
 		border: 4px solid #000;
 		background: #fff;
-        columns: #000;
+		columns: #000;
 	}
-    .hero-button a button:hover{
-        background-color: #000;
-        color: #fff;
-    }
+	.hero-button a button:hover {
+		background-color: #000;
+		color: #fff;
+	}
+	@media screen and (min-width: 800px) {
+		.Hero {
+			display: grid;
+			grid-template-columns: repeat(1fr, 2);
+			grid-column-gap: 1rem;
+			grid-template-rows: 50px 370px 80px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			align-items: center;
+			max-width: 90vw;
+			max-height: 604px;
+		}
+		.hero-img {
+			margin-top: 0;
+			max-width: 405px;
+			max-height: 608px;
+			grid-column: 2;
+			grid-row: 1 / span 3;
+		}
+		.hero-img img {
+			width: 100%;
+			height: 100%;
+			border-radius: 200px;
+		}
+		.hero-img #star,
+		#cube {
+			display: block;
+		}
+
+		.hero-text {
+			justify-content: center;
+			align-items: flex-start;
+			grid-column: 1;
+			grid-row: 2/3;
+		}
+		.hero-text h1 {
+			color: #000;
+			font-family: var(--ff-DM-Sans);
+			font-size: 90px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 2.25px;
+		}
+		.hero-text p {
+			color: #000;
+			font-family: var(--ff-Open-Sans);
+			font-size: 50px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			letter-spacing: 1.25px;
+		}
+		.hero-button {
+			grid-row: 3/3;
+			grid-column: 1;
+			gap: 60px;
+		}
+		.hero-text .hero-desktop {
+			max-width: 620px;
+			max-height: 150px;
+			display: block;
+			color: #000;
+			text-align: justify;
+			font-family: var(--ff-DM-Sans);
+			font-size: 23.25px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			letter-spacing: 0.581px;
+		}
+		.hero-button a button {
+			width: 200px;
+			height: 50px;
+			display: inline-flex;
+			/* padding: 20px 46px 20px 45px; */
+			justify-content: center;
+			align-items: center;
+			border-radius: 15px;
+			background: #384cff;
+			color: #fff;
+			font-size: 1.2rem;
+			cursor: pointer;
+		}
+		.hero-button a button:hover {
+			background: #fff;
+			color: #384cff;
+		}
+	}
 </style>

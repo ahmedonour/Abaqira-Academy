@@ -11,9 +11,9 @@
 
 <style>
 	footer {
-        margin: 10px;
+		margin: 10px;
 		display: flex;
-		width: 360px;
+		width: 100vw;
 		height: 64px;
 		padding: 0px 65px 9.615px 65px;
 		flex-direction: column;
@@ -29,9 +29,9 @@
 		font-weight: 400;
 		line-height: normal;
 	}
-    footer .footer-text p a{
-        color: #000;
-        font-weight: 800;
-        text-decoration: underline;
-    }
+	footer .footer-text p a {
+		color: #000;
+		font-weight: 800;
+		text-decoration: underline;
+	}
 </style>

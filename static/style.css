@@ -1,12 +1,16 @@
 :root {
 	--ff-DM-Sans: 'DM Sans', sans-serif;
 	--ff-Open-Sans: 'Open Sans', sans-serif;
+	/* Size */
+	--Main-width: 83.3vw;
+	--Sec-width: 87vw;
 }
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
-a{
+a {
 	text-decoration: none;
+	color: #000;
 }

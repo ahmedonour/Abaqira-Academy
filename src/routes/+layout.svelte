@@ -1,17 +1,31 @@
 <script>
-	import Footer from "../component/Footer.svelte";
-import Nav from "../component/Nav.svelte";
+	import { fly } from 'svelte/transition';
+	import Footer from '../component/Footer.svelte';
+	import Nav from '../component/Nav.svelte';
 
-
+	export let data;
 </script>
-<main>
-    <Nav/>
-    <slot />
-    <Footer />
-</main>
+
+<div class="app">
+	<Nav />
+	{#key data.url}
+		<main in:fly={{ x: -200, duration: 1000, delay: 1000 }} out:fly={{ x: 200, duration: 1000 }}>
+			<slot />
+		</main>
+	{/key}
+	<Footer />
+</div>
+
 <style>
-    main{
-        display: grid;
-        place-items: center;
-    }
+	.app {
+		display: grid;
+		place-items: center;
+		max-width: 100vw;
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	main {
+		max-width: 100%;
+	}
 </style>
