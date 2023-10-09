@@ -139,11 +139,36 @@
 			list-style: none;
 			color: #000;
 			font-family: var(--ff-Open-Sans);
-			font-size: 24px;
+			font-size: 16px;
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
 			letter-spacing: 0.6px;
+
 		}
+		#desktop-nav li a {
+  color: #000000;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-bottom:5px;
+  position: relative;
+}
+#desktop-nav li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#desktop-nav li a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
 	}
 </style>

@@ -1,4 +1,16 @@
 <script>
+	import { onMount } from "svelte";
+	import { fly } from "svelte/transition";
+
+	
+	let isVisible = false;
+
+onMount(() => {
+  // Trigger the transition after a delay or based on some condition
+  setTimeout(() => {
+	isVisible = true;
+  }, 1000); // Delay the transition for 1 second
+});
 </script>
 
 <section class="Hero">
@@ -12,10 +24,14 @@
 		</p>
 	</div>
 	<div class="hero-img">
-		<img src="star.png" alt="" srcset="" id="star" />
+		<img src="star.svg" alt="" srcset="" id="star" 
+		in:fly={{ x: -200, duration: 500 }} 
+		out:fly={{ x: 200, duration: 500 }} 
+
+		/>
 		<!-- svelte-ignore a11y-img-redundant-alt -->
 		<img src="Hero-image.png" alt="Image Of Studant" srcset="" />
-		<img src="cube.png" alt="" srcset="" id="cube" />
+		<img src="book.svg" alt="" srcset="" id="cube" />
 	</div>
 	<div class="hero-button">
 		<a href="/about"><button>Read More</button></a>
@@ -111,18 +127,34 @@
 		.hero-img #star,
 		#cube {
 			display: block;
+			border-radius: 0;
 		}
-
+		.hero-img #star{
+			position: relative;
+			right: 20px;
+			top: 90px;
+			max-height: 190px;
+			max-width: 190px;
+			z-index: 2;
+		}
+		.hero-img #cube{
+			position: relative;
+			bottom: 200px;
+			left: 100px;
+			max-height: 200px;
+			max-width: 200px;
+		}
 		.hero-text {
 			justify-content: center;
 			align-items: flex-start;
 			grid-column: 1;
 			grid-row: 2/3;
+			grid-column-gap: 1rem;
 		}
 		.hero-text h1 {
 			color: #000;
 			font-family: var(--ff-DM-Sans);
-			font-size: 90px;
+			font-size: 80px;
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
