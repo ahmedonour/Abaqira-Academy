@@ -33,6 +33,8 @@
 		justify-content: flex-end;
 		align-items: center;
 		gap: 28.19px;
+        margin-block: 1rem;
+
 	}
 	.teamMember img {
 		border-radius: 20px;
@@ -62,4 +64,30 @@
 		margin-top: 10px;
 		font-family: var(--ff-Open-Sans);
 	}
+    @media screen and (min-width: 800px){
+		.teamMember{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80vw;
+        margin-block: 3rem;
+    }
+    .teamMember .memberInfo h1 {
+		font-family: var(--ff-DM-Sans);
+		font-size: 2rem;
+		font-weight: 900;
+	}
+	.teamMember .memberInfo p:nth-of-type(1) {
+		font-size: 1rem;
+		font-family: var(--ff-Open-Sans);
+		padding-bottom: 8px;
+		border-bottom: 1px solid #000;
+		font-weight: 600;
+	}
+	.teamMember .memberInfo p:nth-of-type(2) {
+		font-size: 19px;
+		font-weight: 600;
+		margin-top: 10px;
+		font-family: var(--ff-Open-Sans);
+	}
+    }
 </style>

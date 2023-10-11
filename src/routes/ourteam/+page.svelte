@@ -43,4 +43,10 @@
 		line-height: normal;
 		letter-spacing: 0.476px;
 	}
+	@media screen and (min-width: 800px){
+		main h1{
+		font-size: 4rem;
+
+		}
+	}
 </style>
