@@ -121,31 +121,31 @@
 		line-height: normal;
 	}
 	@media screen and (min-width: 800px) {
-		main .about-title{
+		main .about-title {
 			display: none;
 		}
 		main ol li {
-		color: #000;
-		font-family: var(--ff-Open-Sans);
-		font-size: 40px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-	}
-	main ol p {
-		color: #000;
-		text-align: justify;
-		font-family: var(--ff-Open-Sans);
-		font-size: 40px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: normal;
-	}
-	main p{
-		font-size: 40px;
-	}
-	main #last{
-		font-size: 40px;
-	}
+			color: #000;
+			font-family: var(--ff-Open-Sans);
+			font-size: 40px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+		}
+		main ol p {
+			color: #000;
+			text-align: justify;
+			font-family: var(--ff-Open-Sans);
+			font-size: 40px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+		main p {
+			font-size: 40px;
+		}
+		main #last {
+			font-size: 40px;
+		}
 	}
 </style>

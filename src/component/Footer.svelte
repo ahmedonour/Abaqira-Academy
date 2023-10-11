@@ -11,7 +11,7 @@
 
 <style>
 	footer {
-		margin: 10px;
+		/* margin: 10px; */
 		display: flex;
 		width: 100vw;
 		height: 64px;

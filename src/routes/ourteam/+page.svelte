@@ -1,0 +1,46 @@
+<script>
+	import TeamMemper from '../../component/ourteam/TeamMemper.svelte';
+</script>
+
+<svelte:head>
+	<title>Our Team</title>
+</svelte:head>
+<main>
+	<h1>Our Leadership Team</h1>
+	<TeamMemper
+		src="Abdulaziz.png"
+		nameOfmember="AbdulAziz Mahammad"
+		titleOfmember="The CEO & Founder of the Academy"
+		dateOfmember="Since 2013"
+	/>
+	<TeamMemper
+		src="Neima.png"
+		nameOfmember="Neima Mahammad"
+		titleOfmember="Founder & Manager of the Kinder Garden"
+		dateOfmember="Since 2013"
+	/>
+	<TeamMemper
+		src="Khiru.png"
+		nameOfmember="Khiru Mohammed"
+		titleOfmember="Manager of the primary school"
+		dateOfmember="Since 2013"
+	/>
+</main>
+
+<style>
+	main {
+		display: grid;
+		place-items: center;
+	}
+	main h1 {
+		color: #000;
+		text-align: center;
+		margin: 1rem;
+		font-family: var(--ff-DM-Sans);
+		font-size: 19.048px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 0.476px;
+	}
+</style>

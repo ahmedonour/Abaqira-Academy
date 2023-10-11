@@ -52,7 +52,7 @@
 		height: 50px;
 		justify-content: center;
 		align-items: flex-start;
-		gap: 200px;
+		gap: 55vw;
 		flex-shrink: 0;
 	}
 	nav #mobile-nav {
@@ -102,6 +102,7 @@
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
+			gap: 12vw;
 		}
 		nav .logo {
 			display: flex;
@@ -135,40 +136,38 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			gap: 40px;
+			gap: 2.1vw;
 			list-style: none;
 			color: #000;
 			font-family: var(--ff-Open-Sans);
-			font-size: 16px;
+			font-size: 1.2vw;
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
 			letter-spacing: 0.6px;
-
 		}
 		#desktop-nav li a {
-  color: #000000;
-  text-transform: uppercase;
-  display: inline-block;
-  padding-bottom:5px;
-  position: relative;
-}
-#desktop-nav li a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #000000;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-#desktop-nav li a:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-
+			color: #000000;
+			text-transform: uppercase;
+			display: inline-block;
+			padding-bottom: 5px;
+			position: relative;
+		}
+		#desktop-nav li a:after {
+			background: none repeat scroll 0 0 transparent;
+			bottom: 0;
+			content: '';
+			display: block;
+			height: 2px;
+			left: 50%;
+			position: absolute;
+			background: #000000;
+			transition: width 0.3s ease 0s, left 0.3s ease 0s;
+			width: 0;
+		}
+		#desktop-nav li a:hover:after {
+			width: 100%;
+			left: 0;
+		}
 	}
 </style>

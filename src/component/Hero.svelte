@@ -1,16 +1,15 @@
 <script>
-	import { onMount } from "svelte";
-	import { fly } from "svelte/transition";
+	import { onMount } from 'svelte';
+	import { fly } from 'svelte/transition';
 
-	
 	let isVisible = false;
 
-onMount(() => {
-  // Trigger the transition after a delay or based on some condition
-  setTimeout(() => {
-	isVisible = true;
-  }, 1000); // Delay the transition for 1 second
-});
+	onMount(() => {
+		// Trigger the transition after a delay or based on some condition
+		setTimeout(() => {
+			isVisible = true;
+		}, 1000); // Delay the transition for 1 second
+	});
 </script>
 
 <section class="Hero">
@@ -24,10 +23,13 @@ onMount(() => {
 		</p>
 	</div>
 	<div class="hero-img">
-		<img src="star.svg" alt="" srcset="" id="star" 
-		in:fly={{ x: -200, duration: 500 }} 
-		out:fly={{ x: 200, duration: 500 }} 
-
+		<img
+			src="star.svg"
+			alt=""
+			srcset=""
+			id="star"
+			in:fly={{ x: -200, duration: 500 }}
+			out:fly={{ x: 200, duration: 500 }}
 		/>
 		<!-- svelte-ignore a11y-img-redundant-alt -->
 		<img src="Hero-image.png" alt="Image Of Studant" srcset="" />
@@ -129,7 +131,7 @@ onMount(() => {
 			display: block;
 			border-radius: 0;
 		}
-		.hero-img #star{
+		.hero-img #star {
 			position: relative;
 			right: 20px;
 			top: 90px;
@@ -137,7 +139,7 @@ onMount(() => {
 			max-width: 190px;
 			z-index: 2;
 		}
-		.hero-img #cube{
+		.hero-img #cube {
 			position: relative;
 			bottom: 200px;
 			left: 100px;
