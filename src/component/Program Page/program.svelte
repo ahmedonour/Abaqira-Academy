@@ -58,7 +58,7 @@
 		font-weight: 400;
 		line-height: normal;
 	}
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 800px) {
 		.program {
 		padding: 0rem;
 			width: 80vw;

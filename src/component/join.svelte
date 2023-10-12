@@ -28,6 +28,8 @@
 		font-weight: 900;
 	}
 	main button {
+        display: none;
+        position: relative;
 		cursor: pointer;
 		transition: all 1s ease-in-out;
 		/* align-self: end; */
@@ -46,7 +48,7 @@
 		background-color: #9fa7f5;
 		color: #000;
 	}
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 800px) {
 		main {
 			padding: 0;
 		}
@@ -54,6 +56,8 @@
 			font-size: 30px;
 		}
 		main button {
+        bottom: 50px;
+
 			margin-block: 0;
 			align-self: end;
 		}
