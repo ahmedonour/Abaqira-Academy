@@ -21,7 +21,7 @@
 	/>
 	<TeamMemper
 		src="Khiru.png"
-		nameOfmember="Khiru Mohammed"
+		nameOfmember="Heiru Mohammed"
 		titleOfmember="Manager of the primary school"
 		dateOfmember="Since 2013"
 	/>
