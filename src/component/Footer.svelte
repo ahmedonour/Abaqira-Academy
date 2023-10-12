@@ -12,6 +12,7 @@
 <style>
 	footer {
 		/* margin: 10px; */
+		margin-top: 20px;
 		display: flex;
 		width: 100vw;
 		height: 64px;

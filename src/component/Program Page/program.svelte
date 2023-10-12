@@ -14,21 +14,23 @@
 </div>
 
 <style>
-	:root{
+	:root {
 		--ff-size: 100%;
 	}
 	.program {
 		width: 100vw;
-		padding: 1.875rem;
-		display: grid;
-		place-items: left;
-		gap: 2rem;
+		padding-top: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		/* gap: 2rem; */
 	}
 	.program h1 {
 		color: #000;
 		text-align: center;
 		font-family: var(--ff-DM-Sans);
-		font-size: clamp(1rem, 4vw, 2rem);
+		font-size: clamp(1.2rem, 4vw, 2rem);
 		font-style: normal;
 		font-weight: 700;
 		line-height: normal;
@@ -39,15 +41,13 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		
 	}
 	.program .programDetails img {
 		width: 100%;
 		height: 100%;
 
-		margin-block: 2rem;
+		margin-block: 1.2rem;
 		border-radius: 25px;
-		
 	}
 	.program .programDetails p {
 		color: #000;
@@ -58,27 +58,30 @@
 		font-weight: 400;
 		line-height: normal;
 	}
-	@media screen and (min-width: 768px){
-		.program{
+	@media screen and (min-width: 768px) {
+		.program {
+		padding: 0rem;
 			width: 80vw;
-			place-items: left;
+			margin-top: 1rem;
+			align-items: flex-start;
 		}
+		
 		.program h1 {
-			text-align: left;
-		color: #000;
-		font-family: var(--ff-DM-Sans);
-		font-size: clamp(1rem, 4vw, 2rem);
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-	}
-		.program .programDetails img{
+			margin-bottom: 1.5rem;
+			color: #000;
+			font-family: var(--ff-DM-Sans);
+			font-size: clamp(1rem, 4vw, 4rem);
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+		}
+		.program .programDetails img {
 			margin-block: 0px;
 		}
-		.program .programDetails p{
+		.program .programDetails p {
 			font-size: 25px;
 		}
-		.program .programDetails{
+		.program .programDetails {
 			gap: 2rem;
 			height: 435px;
 			width: 100%;
@@ -86,6 +89,6 @@
 			flex-direction: row;
 			align-items: flex-start;
 			justify-content: center;
-		}		
+		}
 	}
 </style>
