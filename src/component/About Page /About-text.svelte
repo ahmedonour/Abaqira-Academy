@@ -9,8 +9,15 @@
 </div>
 
 <style>
+	:root{
+		--bg-color: #ff5d1d;
+	}
 	.about-text {
 		width: var(--Main-width);
+		background-color: var(--bg-color);
+		margin-top: 1rem;
+		padding: 2rem;
+		border-radius: 20px;
 	}
 	.about-text h1 {
 		font-family: var(--ff-DM-Sans);
@@ -30,6 +37,11 @@
 		line-height: normal;
 	}
 	@media screen and (min-width: 800px) {
+		.about-text{
+		padding: 4rem;
+		border-radius: 50px;
+
+		}
 		.about-text h1 {
 			font-family: var(--ff-DM-Sans);
 			font-weight: 500;
