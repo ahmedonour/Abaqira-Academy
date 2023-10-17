@@ -10,7 +10,8 @@
 
 <style>
 	:root{
-		--bg-color: #ff5d1d;
+		--bg-color: #384cff;
+		--text-color: #fff;
 	}
 	.about-text {
 		width: var(--Main-width);
@@ -23,12 +24,12 @@
 		font-family: var(--ff-DM-Sans);
 		font-weight: 500;
 		font-size: 27px;
-		color: #000;
+		color:var(--text-color);
 
 		line-height: normal;
 	}
 	.about-text p {
-		color: #000;
+		color: var(--text-color);
 		text-align: justify;
 		font-family: var(--ff-Open-Sans);
 		font-size: 15.2px;
