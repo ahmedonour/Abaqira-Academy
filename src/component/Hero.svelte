@@ -42,10 +42,10 @@
 
 <style>
 	.Hero {
-		width: var(--Sec-width);
+		width: 80vw;
 		margin-top: 26px;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		flex-direction: column;
 	}
