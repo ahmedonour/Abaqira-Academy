@@ -47,12 +47,12 @@
 			font-family: var(--ff-DM-Sans);
 			font-weight: 500;
 			font-size: 96px;
-			color: #000;
+			color: var(--text-color);
 
 			line-height: normal;
 		}
 		.about-text p {
-			color: #000;
+			color:var(--text-color);
 			text-align: justify;
 			font-family: var(--ff-Open-Sans);
 			font-size: 40px;
