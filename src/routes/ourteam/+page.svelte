@@ -3,7 +3,9 @@
 </script>
 
 <svelte:head>
-	<title>Our Team</title>
+	<meta name="description" content="Meet the dedicated team behind Abaqira Academy's primary and kindergarten education excellence">
+    <meta name="keywords" content="Our Team, Abaqira Academy Staff, Education Professionals">
+    <title>Our Team at Abaqira Academy</title>
 </svelte:head>
 <main>
 	<h1>Our Leadership Team</h1>

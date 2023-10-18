@@ -4,6 +4,11 @@
 
 
 </script>
+<svelte:head>
+    <meta name="description" content="Explore Abaqira Academy's comprehensive primary and kindergarten education programs">
+    <meta name="keywords" content="Our Program, Primary Education, Kindergarten Curriculum, Abaqira Academy">
+    <title>Our Program at Abaqira Academy</title>
+</svelte:head>
 <main>
     <Program 
     ProgramTitle="Our Programs at Abaqira Academy"
