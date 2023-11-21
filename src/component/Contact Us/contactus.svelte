@@ -15,7 +15,7 @@
 			<p>Warm regards, The Abaqira Academy Team</p>
 		</div>
 	</div>
-	<form action="https://formsubmit.co/ahmedonour.49@gmail.com" method="POST">
+	<form action="https://formsubmit.co/info@abaqiraacademy.com" method="POST">
 		<input type="text" name="name" id="name" placeholder="Name" />
 		<input type="email" name="email" id="email" placeholder="Email" />
 		<textarea name="Message" id="message" cols="30" rows="5" placeholder="Message" />
