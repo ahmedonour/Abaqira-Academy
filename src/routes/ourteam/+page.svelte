@@ -3,9 +3,12 @@
 </script>
 
 <svelte:head>
-	<meta name="description" content="Meet the dedicated team behind Abaqira Academy's primary and kindergarten education excellence">
-    <meta name="keywords" content="Our Team, Abaqira Academy Staff, Education Professionals">
-    <title>Our Team at Abaqira Academy</title>
+	<meta
+		name="description"
+		content="Meet the dedicated team behind Abaqira Academy's primary and kindergarten education excellence"
+	/>
+	<meta name="keywords" content="Our Team, Abaqira Academy Staff, Education Professionals" />
+	<title>Our Team at Abaqira Academy</title>
 </svelte:head>
 <main>
 	<h1>Our Leadership Team</h1>
@@ -45,10 +48,9 @@
 		line-height: normal;
 		letter-spacing: 0.476px;
 	}
-	@media screen and (min-width: 800px){
-		main h1{
-		font-size: 4rem;
-
+	@media screen and (min-width: 800px) {
+		main h1 {
+			font-size: 4rem;
 		}
 	}
 </style>

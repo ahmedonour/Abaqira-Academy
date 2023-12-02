@@ -60,12 +60,12 @@
 	}
 	@media screen and (min-width: 800px) {
 		.program {
-		padding: 0rem;
+			padding: 0rem;
 			width: 80vw;
 			margin-top: 1rem;
 			align-items: flex-start;
 		}
-		
+
 		.program h1 {
 			margin-bottom: 1.5rem;
 			color: #000;

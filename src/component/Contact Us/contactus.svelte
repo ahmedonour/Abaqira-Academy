@@ -24,7 +24,7 @@
 </main>
 
 <style>
-	:root{
+	:root {
 		--fs-heading: 3.3rem;
 		--fs-ContactUs: 1.35rem;
 		--padding-inline: 25px;
@@ -154,25 +154,23 @@
 	main .contact-title .deg90 p {
 		display: none;
 	}
-	form button:hover{
+	form button:hover {
 		background-color: #384cff;
 		color: #fff;
-
 	}
-	@media screen and (max-width: 320px){
-		:root{
-		--fs-heading: 2.8rem;
-		--fs-ContactUs: 1rem;
-	}
+	@media screen and (max-width: 320px) {
+		:root {
+			--fs-heading: 2.8rem;
+			--fs-ContactUs: 1rem;
+		}
 	}
 	@media screen and (min-width: 800px) {
-		:root{
+		:root {
 			--fs-heading: 6rem;
 			--fs-ContactUs: 2.5rem;
 			--fs-p: 20px;
-			--padding-inline: 40px
-
-				}
+			--padding-inline: 40px;
+		}
 		main {
 			width: 71vw;
 			flex-direction: row;
@@ -258,8 +256,8 @@
 			width: 50%;
 		}
 	}
-	@media screen and (max-height: 700px){
-		:root{
+	@media screen and (max-height: 700px) {
+		:root {
 			--fs-heading: 6rem;
 			--fs-ContactUs: 2rem;
 			--fs-p: 15px;

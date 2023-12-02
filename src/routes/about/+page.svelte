@@ -1,10 +1,17 @@
 <script>
 	import AboutText from '../../component/About Page /About-text.svelte';
 </script>
+
 <svelte:head>
-	<meta name="description" content="Learn more about Abaqira Academy, a leading institution for primary and kindergarten education">
-    <meta name="keywords" content="About Abaqira Academy, Primary School, Kindergarten School, Education Institution">
-    <title>About Abaqira Academy</title>
+	<meta
+		name="description"
+		content="Learn more about Abaqira Academy, a leading institution for primary and kindergarten education"
+	/>
+	<meta
+		name="keywords"
+		content="About Abaqira Academy, Primary School, Kindergarten School, Education Institution"
+	/>
+	<title>About Abaqira Academy</title>
 </svelte:head>
 <main>
 	<div class="about-title">

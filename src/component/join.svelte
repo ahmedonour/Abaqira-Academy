@@ -28,8 +28,8 @@
 		font-weight: 900;
 	}
 	main button {
-        display: none;
-        position: relative;
+		display: none;
+		position: relative;
 		cursor: pointer;
 		transition: all 1s ease-in-out;
 		/* align-self: end; */
@@ -56,7 +56,7 @@
 			font-size: 30px;
 		}
 		main button {
-        bottom: 50px;
+			bottom: 50px;
 
 			margin-block: 0;
 			align-self: end;

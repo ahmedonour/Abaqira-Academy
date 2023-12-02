@@ -9,7 +9,7 @@
 </div>
 
 <style>
-	:root{
+	:root {
 		--bg-color: #384cff;
 		--text-color: #fff;
 	}
@@ -24,7 +24,7 @@
 		font-family: var(--ff-DM-Sans);
 		font-weight: 500;
 		font-size: 27px;
-		color:var(--text-color);
+		color: var(--text-color);
 
 		line-height: normal;
 	}
@@ -38,24 +38,23 @@
 		line-height: normal;
 	}
 	@media screen and (min-width: 800px) {
-		.about-text{
-		padding: 4rem;
-		border-radius: 50px;
-
+		.about-text {
+			padding: 4rem;
+			border-radius: 50px;
 		}
 		.about-text h1 {
 			font-family: var(--ff-DM-Sans);
 			font-weight: 500;
-			font-size: 96px;
+			font-size: 30px;
 			color: var(--text-color);
 
 			line-height: normal;
 		}
 		.about-text p {
-			color:var(--text-color);
+			color: var(--text-color);
 			text-align: justify;
 			font-family: var(--ff-Open-Sans);
-			font-size: 40px;
+			font-size: 20px;
 			font-style: normal;
 			font-weight: 400;
 			line-height: 1.5;
